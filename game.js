@@ -1,73 +1,73 @@
 const scenes = {
 
 start: {
-text: "Regen fällt auf die Stadt. Ein Anruf um 3 Uhr nachts. Mord im Hafen.",
+text: "Rain falls on the city. A call at 3 AM. Murder at the harbor.",
 choices: [
-{ text: "Zum Hafen fahren", next: "harbor" },
-{ text: "Polizei anrufen", next: "police" },
-{ text: "Weiter schlafen", next: "badEnd" }
+{ text: "Drive to harbor", next: "harbor" },
+{ text: "Call police", next: "police" },
+{ text: "Keep sleeping", next: "badEnd" }
 ]
 },
 
 harbor: {
-text: "Nebel liegt über dem Wasser. Eine Gestalt rennt davon.",
+text: "Fog lies over the water. A figure runs away.",
 choices: [
-{ text: "Verfolgen", next: "chase" },
-{ text: "Tatort untersuchen", next: "investigate" }
+{ text: "Chase", next: "chase" },
+{ text: "Investigate crime scene", next: "investigate" }
 ]
 },
 
 police: {
-text: "Die Polizei ist misstrauisch. Du verlierst wertvolle Zeit.",
+text: "The police are suspicious. You waste precious time.",
 choices: [
-{ text: "Trotzdem zum Hafen", next: "harbor" }
+{ text: "Go to harbor anyway", next: "harbor" }
 ]
 },
 
 badEnd: {
-text: "Am Morgen ist der Killer verschwunden. Fall gescheitert.",
+text: "In the morning the killer is gone. Case failed.",
 choices: []
 },
 
 chase: {
-text: "Du verfolgst die Gestalt durch die dunklen Gassen. Dein Herz rast.",
+text: "You chase the figure through dark alleys. Your heart races.",
 choices: [
-{ text: "Schneller laufen", next: "caughtSuspect" },
-{ text: "Um Verstärkung rufen", next: "backup" }
+{ text: "Run faster", next: "caughtSuspect" },
+{ text: "Call for backup", next: "backup" }
 ]
 },
 
 caughtSuspect: {
-text: "Du erreichst die Gestalt! Ein verdächtiger Mann mit einer Waffe. Was nun?",
+text: "You catch the figure! A suspicious man with a weapon. What now?",
 choices: [
-{ text: "Entwaffnen", next: "goodEnd" },
-{ text: "Verhandeln", next: "escape" }
+{ text: "Disarm", next: "goodEnd" },
+{ text: "Negotiate", next: "escape" }
 ]
 },
 
 backup: {
-text: "Die Polizei kommt. Der Verdächtige wird gestellt.",
+text: "Police arrive. The suspect is cornered.",
 choices: [
-{ text: "Befragen", next: "goodEnd" }
+{ text: "Interrogate", next: "goodEnd" }
 ]
 },
 
 escape: {
-text: "Der Mann flieht. Du hast ihn verloren.",
+text: "The man flees. You lost him.",
 choices: [
-{ text: "Zum Tatort zurück", next: "investigate" }
+{ text: "Return to crime scene", next: "investigate" }
 ]
 },
 
 investigate: {
-text: "Am Tatort findest du wichtige Beweise.",
+text: "At the crime scene you find important evidence.",
 choices: [
-{ text: "Den Killer fassen", next: "goodEnd" }
+{ text: "Catch the killer", next: "goodEnd" }
 ]
 },
 
 goodEnd: {
-text: "Der Fall ist gelöst! Du bist ein echter Detective.",
+text: "The case is solved! You are a real detective.",
 choices: []
 }
 
